@@ -32,3 +32,35 @@
   }
 
   ```
+
+### 3. Multiple ways of including SVG in a website. 
+  #### Inline SVG:
+  ``` html
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  </svg>
+
+  ```
+
+  #### Using the <img> Tag: 
+  ``` html
+  <img src="image.svg" alt="SVG Image">
+  
+  ```
+
+  #### Background Image in CSS: 
+  ``` css
+  .svg-background {
+    background-image: url('image.svg');
+    /* Additional styling properties */
+  }
+  
+  ```
+
+  #### Object Tag: 
+  ``` html
+  <object type="image/svg+xml" data="image.svg">
+    Your browser does not support SVG
+  </object>
+  
+  ```

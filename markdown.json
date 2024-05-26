@@ -1,0 +1,45 @@
+{
+	"Create H4 Heading": {
+		"prefix": "4",
+		"body": [
+		  "#### $1"
+		],
+		"description": "Creates an H4 heading"
+	},
+
+	"Create H3 Heading": {
+	  "prefix": "3",
+	  "body": [
+		"### $1"
+	  ],
+	  "description": "Creates an H3 heading"
+	},
+
+	"Create H2 Heading": {
+		"prefix": "2",
+		"body": [
+		  "## $1"
+		],
+		"description": "Creates an H2 heading"
+	},
+
+	"Create H1 Heading": {
+		"prefix": "1",
+		"body": [
+		  "# $1"
+		],
+		"description": "Creates an H1 heading"
+	},
+
+	"Create Code Block": {
+		"prefix": "f",
+		"body": [
+			"``` $1",
+			"$0",
+			"```"
+		],
+		"description": "Create code block"
+	}
+
+  }
+  

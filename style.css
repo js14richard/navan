@@ -1,0 +1,293 @@
+:root{
+
+    font-size: 62.5%; /* Setting 1rem as 10px */
+    
+    --color-primary-light : #570099;
+    --color-primary-dark:#3A0066;
+    --color-primary-deep-dark:#07062C;
+
+    --color-secondary-light:#F5C73B;
+    --color-secondary-dark:#F3AA05;
+
+    --color-tertiary:#fb4b37;
+
+    --color-quaternary-dark:#C6D7F0;
+    --color-quaternary-light:#C3DAEB;
+
+
+    --color-light:#ffff;
+    --color-dark:#0000;
+
+    --color-gradient: linear-gradient(107deg,#8f00ff 11.97%,#a30fdf 35.02%,#b920bd 56.51%,#db3679 74.85%,#fb4b37 88.48%);
+
+    /*
+    
+    font-primary --> Used for Headings 
+    font-secondary --> Used for content
+    font-tertiary --> Used for Fancy Headings
+
+    */
+
+    --font-primary:"Roboto", sans-serif;
+    --font-secondary:"Mukta", sans-serif; 
+    --font-tertiary:"PT Serif", serif;
+
+    --font-size-f1:3.6rem; /* 36px */
+    --font-size-f2:2.8rem; /* 28px */
+    --font-size-f3:2.2rem; /* 22px */
+    --font-size-f4:1.8rem; /* 18px */
+    --font-size-f5:1.6rem; /* 16px */
+    --font-size-f6:1.2rem; /* 12px */ 
+    
+}
+
+body{
+    font-size:1.6rem;
+    font-family: var(--font-secondary);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+
+.b-text{
+    font-weight: bold;
+}
+
+.light-link:link, .light-link:visited{
+    color:var(--color-light)
+}
+
+/* Components Styling */
+.svg{
+    height:2.4rem;
+    width: 2.4rem;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+/* Buttons Styling */
+
+.btn{
+    padding:.8rem 2.6rem;
+    border-radius: 2rem;
+    transition: all .5s;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary-deep-dark{
+    color:var(--color-light);
+    background-color: var(--color-primary-deep-dark);
+}
+
+.btn-primary-deep-dark:hover{
+    background-color: var(--color-primary-dark);
+}
+
+.btn-primary-light{
+    color:var(--color-light);
+    background-color: var(--color-primary-light);
+}
+
+.btn-primary-light:hover{
+    background-color: var(--color-primary-dark);
+}
+
+
+.btn-secondary-dark{
+    color:var(--color-dark);
+    background-color: var(--color-secondary-dark);
+}
+
+.btn-secondary-dark:hover{
+    color:var(--color-dark);
+    background-color: var(--color-secondary-light);
+}
+
+.btn-secondary-light{
+    color:var(--color-dark);
+    background-color: var(--color-secondary-light);
+}
+
+.btn-secondary-light:hover{
+    color:var(--color-dark);
+    background-color: var(--color-secondary-dark);
+}
+
+/* Animations Setup */
+
+@keyframes line-spread{
+    0% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*** Header Section Styling ***/
+
+header{
+    z-index: 10;
+    position: relative;
+}
+
+/* Promotion Label Top */
+
+.top-label-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: var(--font-size-f4);
+    height: max-content;
+    font-family: var(--font-secondary);
+    color:var(--color-primary-deep-dark);
+    padding:.5rem;
+    background-image: linear-gradient(to right, var(--color-quaternary-dark), var(--color-quaternary-light));
+    position: fixed;
+    top:0;
+}
+
+.top-label-pricing{
+    color:var(--color-primary-light);
+    font-size: var(--font-tertiary);
+}
+
+.top-label-link:link, .top-label-link:visited{
+    text-decoration: underline;
+}
+
+
+/* Main Navbar */
+
+.main-nav-section{
+    width: 100%;
+    background-color: var(--color-light);
+    height: max-content;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top:4rem;
+}
+
+.main-nav-container{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:var(--font-size-f5);
+}
+
+.main-nav-logo{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-logo img{
+    height: inherit;
+}
+
+
+.main-nav-list{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    line-height: 100%;
+}
+
+
+.nav-list-item{
+    padding: 3rem 1rem ;
+    display: block; 
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.nav-list-item:hover{
+    cursor:default;
+    font-weight: 500;
+    color:var(--color-primary-light);
+    transition: all .5s ease-in-out;
+}
+
+
+.nav-list-item::after{
+    content: "";
+    position: absolute;
+    height: .2rem;
+    width: 100%;
+    left:0;
+    bottom:0;
+    background-color: var(--color-primary-dark);
+    display: block;
+    transform-origin: center;
+    transform:scale(0, 1);
+    transition: all .3s ease-in-out;
+    z-index: 10000;
+
+}
+
+
+.nav-list-item:hover::after{
+    transform: scale(1, 1);
+    transition: all .3s ease-in-out;
+}
+
+.main-nav-btn-grp{
+    display: flex;
+    gap:1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.globe-svg{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+
+/* Main Content */
+
+/* Hero Section */
+
+.hero-section{
+    background-image: var(--color-gradient);
+    height: 75rem;
+    position: relative;
+    top: 11.6rem;
+    color: var(--color-light);
+}
+
+.wave-bg-xl{
+    position: absolute;
+    height: 50rem;
+    bottom:0;
+    left: -38%;
+    overflow: hidden;
+}
+
+.hero-main-heading{
+    font-size: var(--font-size-f1);
+    font-family: var(--font-tertiary);
+    text-align: center;
+    padding-top:5.5rem;
+}
+
+.hero-secondary-heading{
+    text-align: center;
+    font-size: var(--font-size-f3);
+    font-family: var(--font-secondary);
+    padding-top:2.3rem;
+}
