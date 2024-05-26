@@ -16,7 +16,7 @@
 
 
     --color-light:#ffff;
-    --color-dark:#0000;
+    --color-dark:#000000;
 
     --color-gradient: linear-gradient(107deg,#8f00ff 11.97%,#a30fdf 35.02%,#b920bd 56.51%,#db3679 74.85%,#fb4b37 88.48%);
 
@@ -81,6 +81,11 @@ a:link, a:visited{
     transition: all .5s;
 }
 
+.btn-block{
+    padding:.8rem 10.6rem;
+    font-weight: bold;
+}
+
 .btn:hover{
     cursor: pointer;
 }
@@ -138,7 +143,7 @@ a:link, a:visited{
 /*** Header Section Styling ***/
 
 header{
-    z-index: 10;
+    z-index: 1000;
     position: relative;
 }
 
@@ -276,18 +281,111 @@ header{
     bottom:0;
     left: -38%;
     overflow: hidden;
+    z-index: 1;
+}
+
+.hero-section-text{
+    text-align: center;
+    padding-top:4.5rem;
 }
 
 .hero-main-heading{
     font-size: var(--font-size-f1);
     font-family: var(--font-tertiary);
-    text-align: center;
-    padding-top:5.5rem;
+
 }
 
 .hero-secondary-heading{
-    text-align: center;
     font-size: var(--font-size-f3);
     font-family: var(--font-secondary);
-    padding-top:2.3rem;
+    padding-top:2rem;
+}
+
+
+/* Hero section cards */
+
+.hero-travel-cards{
+    z-index: 20;
+    margin-top:3.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: var(--color-dark);
+    flex-wrap:wrap;
+}
+
+.travel-card{
+    padding: 2rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.travel-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+
+.travel-card-3{
+    height:22rem;
+    width: 22rem;
+}
+
+.travel-card-3-1{
+    background-image: url('images/travel3.png');
+    background-size: cover;
+}
+
+.travel-card-3-2{
+    background-image: url('images/team-offsites2.png');
+    background-size: cover;
+}
+
+.travel-card-2{
+    height:26rem;
+    width: 22rem;
+}
+
+.travel-card-2-1{
+    background-image: url('images/expense-navan-and-mastercard.png');
+    background-size: cover;
+}
+
+.travel-card-2-2{
+    background-image: url('images/delegates2.png');
+    background-size: cover;
+}
+
+.travel-card-1{
+    height:32rem;
+    width: 23rem;
+    background-image: url('images/business-travel.png');
+    background-size: cover;
+}
+
+.travel-card-content{
+    color: var(--color-dark);
+    font-size: var(--font-size-f6);
+    line-height: 2rem;
+}
+
+.travel-checkbox{
+    padding:10rem;
+    height: 3rem;
+    width: 3rem;
+    outline:.1rem solid var(--color-primary-deep-dark);
+}   
+
+.hero-section-btn-grp{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 5rem;
+}
+
+.watch-video{
+    margin-top:1.5rem;
 }
