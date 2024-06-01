@@ -35,16 +35,33 @@
     --font-size-f1:3.6rem; /* 36px */
     --font-size-f2:2.8rem; /* 28px */
     --font-size-f3:2.2rem; /* 22px */
-    --font-size-f4:1.8rem; /* 18px */
+    --font-size-f4:2rem; /* 20px */
     --font-size-f5:1.6rem; /* 16px */
     --font-size-f6:1.2rem; /* 12px */ 
     
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
     font-size:1.6rem;
     font-family: var(--font-secondary);
 }
+
+@media screen and (max-width: 1250px) {
+    :root {
+        font-size: 58%;
+    }
+}
+
+@media screen and (max-width: 120px) {
+    :root {
+        font-size: 48%;
+    }
+}
+
 
 *{
     margin: 0;
@@ -139,6 +156,34 @@ a:link, a:visited{
         transform: scale(1);
     }
 }
+
+@keyframes horizontal-scroll{
+    0% {
+        transform: translateZ(0) translateX(0);
+    }
+    100%{
+        transform: translateZ(0) translateX(-50%);
+    }
+}
+
+/*** Heading Styling ***/
+
+.primary-heading{
+    font-size: var(--font-size-f1);
+    font-family: var(--font-primary);
+}
+
+.secondary-heading{
+    font-size: var(--font-size-f3);
+    font-family: var(--font-primary);
+}
+
+/*** Paragraph styling ***/
+.paragraph-content{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-f4);
+}
+
 
 /*** Header Section Styling ***/
 
@@ -269,7 +314,8 @@ header{
 
 .hero-section{
     background-image: var(--color-gradient);
-    height: 75rem;
+    height: max-content;
+    padding: 7rem;
     position: relative;
     top: 11.6rem;
     color: var(--color-light);
@@ -286,7 +332,6 @@ header{
 
 .hero-section-text{
     text-align: center;
-    padding-top:4.5rem;
 }
 
 .hero-main-heading{
@@ -373,10 +418,8 @@ header{
 }
 
 .travel-checkbox{
-    padding:10rem;
     height: 3rem;
     width: 3rem;
-    outline:.1rem solid var(--color-primary-deep-dark);
 }   
 
 .hero-section-btn-grp{
@@ -387,5 +430,83 @@ header{
 }
 
 .watch-video{
-    margin-top:1.5rem;
+    margin-top:2rem;
+}
+.watch-video:hover{
+    text-decoration: underline;
+}
+
+
+/*** client-logo-slider-section ***/
+
+.client-logo-slider-section{
+    width: 100%;
+    position: relative;
+    margin-top: 13rem;
+    overflow-x: hidden;
+
+}
+.scroll-animation-container{
+    display: flex;
+    animation: horizontal-scroll 20s linear infinite;
+    backface-visibility: hidden;
+    
+    gap: 8.5rem;
+}
+
+.client-logo-container{
+    display: flex;
+    gap: 8.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+    object-fit: contain;
+}
+
+.client-slider-img{
+    height: auto;
+    width: 10rem;
+    vertical-align: middle;
+}
+
+
+.integrated-business-text{
+    text-align: center;
+    margin-top: 10rem;
+
+}
+
+
+/*** Three Paragraph Section ***/
+
+.three-para-section{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
+.three-para-section-container{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.three-para-section-item{
+    gap: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three-para-svg-container{
+    padding: 1.6rem;
+    border-radius: 10rem;
+    background-color: var(--color-primary-light);
+    display: flex;
+    color: var(--color-light);
+
 }
