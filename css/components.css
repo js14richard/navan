@@ -1,0 +1,97 @@
+/* Components Styling */
+.svg{
+    height:2.4rem;
+    width: 2.4rem;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+/* Buttons Styling */
+
+.btn{
+    padding:.8rem 2.6rem;
+    border-radius: 2rem;
+    transition: all .5s;
+}
+
+.btn-block{
+    padding:.8rem 10.6rem;
+    font-weight: bold;
+}
+
+.btn-block-xl{
+    padding:1rem 25.6rem;
+    border-radius: 4rem;
+    font-weight: bold;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary-deep-dark{
+    color:var(--color-light);
+    background-color: var(--color-primary-deep-dark);
+}
+
+.btn-primary-deep-dark:hover{
+    background-color: var(--color-primary-dark);
+}
+
+.btn-primary-light{
+    color:var(--color-light);
+    background-color: var(--color-primary-light);
+}
+
+.btn-primary-light:hover{
+    background-color: var(--color-primary-dark);
+}
+
+
+.btn-secondary-dark{
+    color:var(--color-dark);
+    background-color: var(--color-secondary-dark);
+}
+
+.btn-secondary-dark:hover{
+    color:var(--color-dark);
+    background-color: var(--color-secondary-light);
+}
+
+.btn-secondary-light{
+    color:var(--color-dark);
+    background-color: var(--color-secondary-light);
+}
+
+.btn-secondary-light:hover{
+    color:var(--color-dark);
+    background-color: var(--color-secondary-dark);
+}
+
+
+/*** Heading Styling ***/
+
+.primary-heading{
+    font-size: var(--font-size-f1);
+    font-family: var(--font-primary);
+}
+
+.secondary-heading{
+    font-size: var(--font-size-f3);
+    font-family: var(--font-primary);
+}
+
+.fancy-heading{
+    font-size: var(--font-size-f1);
+    font-family: var(--font-tertiary);
+}
+
+/*** Paragraph styling ***/
+.paragraph-content{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-f4);
+}
+

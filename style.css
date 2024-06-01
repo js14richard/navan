@@ -1,44 +1,18 @@
+@import url(css/utilities.css);
+@import url(css/variables.css);
+@import url(css/sections/img-para-section.css);
+@import url(css/sections/three-para-section.css);
+@import url(css/animation.css);
+@import url(css/components.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
-
     font-size: 62.5%; /* Setting 1rem as 10px */
-    
-    --color-primary-light : #570099;
-    --color-primary-dark:#3A0066;
-    --color-primary-deep-dark:#07062C;
-
-    --color-secondary-light:#F5C73B;
-    --color-secondary-dark:#F3AA05;
-
-    --color-tertiary:#fb4b37;
-
-    --color-quaternary-dark:#C6D7F0;
-    --color-quaternary-light:#C3DAEB;
-
-
-    --color-light:#ffff;
-    --color-dark:#000000;
-
-    --color-gradient: linear-gradient(107deg,#8f00ff 11.97%,#a30fdf 35.02%,#b920bd 56.51%,#db3679 74.85%,#fb4b37 88.48%);
-
-    /*
-    
-    font-primary --> Used for Headings 
-    font-secondary --> Used for content
-    font-tertiary --> Used for Fancy Headings
-
-    */
-
-    --font-primary:"Roboto", sans-serif;
-    --font-secondary:"Mukta", sans-serif; 
-    --font-tertiary:"PT Serif", serif;
-
-    --font-size-f1:3.6rem; /* 36px */
-    --font-size-f2:2.8rem; /* 28px */
-    --font-size-f3:2.2rem; /* 22px */
-    --font-size-f4:2rem; /* 20px */
-    --font-size-f5:1.6rem; /* 16px */
-    --font-size-f6:1.2rem; /* 12px */ 
-    
 }
 
 html{
@@ -50,139 +24,25 @@ body{
     font-family: var(--font-secondary);
 }
 
-@media screen and (max-width: 1250px) {
+
+
+@media screen and (max-width: 1200px) {
     :root {
         font-size: 58%;
     }
 }
 
-@media screen and (max-width: 120px) {
+@media screen and (max-width: 1000px) {
     :root {
-        font-size: 48%;
+        font-size: 55%;
     }
-}
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Utilities */
-
-.b-text{
-    font-weight: bold;
-}
-
-.light-link:link, .light-link:visited{
-    color:var(--color-light)
-}
-
-/* Components Styling */
-.svg{
-    height:2.4rem;
-    width: 2.4rem;
-}
-
-a:link, a:visited{
-    text-decoration: none;
-    color:inherit;
-}
-
-/* Buttons Styling */
-
-.btn{
-    padding:.8rem 2.6rem;
-    border-radius: 2rem;
-    transition: all .5s;
-}
-
-.btn-block{
-    padding:.8rem 10.6rem;
-    font-weight: bold;
-}
-
-.btn:hover{
-    cursor: pointer;
-}
-
-.btn-primary-deep-dark{
-    color:var(--color-light);
-    background-color: var(--color-primary-deep-dark);
-}
-
-.btn-primary-deep-dark:hover{
-    background-color: var(--color-primary-dark);
-}
-
-.btn-primary-light{
-    color:var(--color-light);
-    background-color: var(--color-primary-light);
-}
-
-.btn-primary-light:hover{
-    background-color: var(--color-primary-dark);
-}
-
-
-.btn-secondary-dark{
-    color:var(--color-dark);
-    background-color: var(--color-secondary-dark);
-}
-
-.btn-secondary-dark:hover{
-    color:var(--color-dark);
-    background-color: var(--color-secondary-light);
-}
-
-.btn-secondary-light{
-    color:var(--color-dark);
-    background-color: var(--color-secondary-light);
-}
-
-.btn-secondary-light:hover{
-    color:var(--color-dark);
-    background-color: var(--color-secondary-dark);
-}
-
-/* Animations Setup */
-
-@keyframes line-spread{
-    0% {
-        transform: scale(0);
+    .img-para-container{
+        width: 100%;
     }
-    100%{
-        transform: scale(1);
-    }
+
 }
 
-@keyframes horizontal-scroll{
-    0% {
-        transform: translateZ(0) translateX(0);
-    }
-    100%{
-        transform: translateZ(0) translateX(-50%);
-    }
-}
-
-/*** Heading Styling ***/
-
-.primary-heading{
-    font-size: var(--font-size-f1);
-    font-family: var(--font-primary);
-}
-
-.secondary-heading{
-    font-size: var(--font-size-f3);
-    font-family: var(--font-primary);
-}
-
-/*** Paragraph styling ***/
-.paragraph-content{
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-f4);
-}
 
 
 /*** Header Section Styling ***/
@@ -202,7 +62,7 @@ header{
     height: max-content;
     font-family: var(--font-secondary);
     color:var(--color-primary-deep-dark);
-    padding:.5rem;
+    padding:1rem;
     background-image: linear-gradient(to right, var(--color-quaternary-dark), var(--color-quaternary-light));
     position: fixed;
     top:0;
@@ -225,9 +85,7 @@ header{
     background-color: var(--color-light);
     height: max-content;
     position: fixed;
-    display: flex;
-    justify-content: center;
-    top:4rem;
+    top:var(--five-rem);
 }
 
 .main-nav-container{
@@ -236,6 +94,7 @@ header{
     align-items: center;
     justify-content: space-between;
     font-size:var(--font-size-f5);
+    margin: 0 auto;
 }
 
 .main-nav-logo{
@@ -251,7 +110,7 @@ header{
 
 .main-nav-list{
     display: flex;
-    gap: 3rem;
+    gap: var(--three-rem);
     list-style-type: none;
     line-height: 100%;
 }
@@ -319,26 +178,17 @@ header{
     position: relative;
     top: 11.6rem;
     color: var(--color-light);
+    overflow: hidden;
 }
 
 .wave-bg-xl{
     position: absolute;
-    height: 50rem;
+    height: calc(5*var(--ten-rem));
     bottom:0;
     left: -38%;
-    overflow: hidden;
     z-index: 1;
 }
 
-.hero-section-text{
-    text-align: center;
-}
-
-.hero-main-heading{
-    font-size: var(--font-size-f1);
-    font-family: var(--font-tertiary);
-
-}
 
 .hero-secondary-heading{
     font-size: var(--font-size-f3);
@@ -356,7 +206,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: var(--three-rem);
     color: var(--color-dark);
     flex-wrap:wrap;
 }
@@ -418,15 +268,14 @@ header{
 }
 
 .travel-checkbox{
-    height: 3rem;
-    width: 3rem;
+    height: var(--three-rem);
+    width: var(--three-rem);
 }   
 
 .hero-section-btn-grp{
-    text-align: center;
     position: relative;
     z-index: 2;
-    margin-top: 5rem;
+    margin-top: var(--five-rem);
 }
 
 .watch-video{
@@ -459,54 +308,81 @@ header{
     gap: 8.5rem;
     justify-content: center;
     align-items: center;
-    padding: 7rem 0;
+    margin: 7rem 0;
     object-fit: contain;
 }
 
 .client-slider-img{
     height: auto;
-    width: 10rem;
+    width: var(--ten-rem);
     vertical-align: middle;
 }
 
 
-.integrated-business-text{
-    text-align: center;
-    margin-top: 10rem;
-
+.integrated-business-text{    
+    margin: var(--ten-rem) 0;
 }
 
 
-/*** Three Paragraph Section ***/
+/*** Three Para Section Goes HERE ***/
 
-.three-para-section{
-    margin-top: 12rem;
-    display: flex;
-    justify-content: center;
+/*** Image Paragraph section goes HERE ***/
+
+/*** Blue banner styling ***/
+
+.home-blue-banner-section{
+    padding: var(--three-rem) 0;
 }
 
-.three-para-section-container{
+.blue-banner-container{
+    width: 75%;
+    padding:var(--ten-rem) var(--fifteen-rem);
+    background-image: var(--blue-banner-gradient);
+    margin: 0 auto;
+    border-radius: var(--three-rem);
+    color: var(--color-light);
+}
+
+.blue-banner-author-info > *{
+    padding : .3rem;    
+}
+
+.gamestop-logo{
+    width: auto;
+    height: 2rem;
+    filter: brightness(0) invert(1);
+}
+
+
+
+/*** List Image section ***/
+
+.list-img-container{
     display: flex;
     justify-content: space-between;
     width: 75%;
-    align-items: center;
-    text-align: center;
-    gap: 5rem;
+    margin: 0 auto;
+    font-size: var(--font-size-f4);
 }
 
-.three-para-section-item{
-    gap: 1.5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.list-img-item{
+    list-style-type: none;
 }
 
-.three-para-svg-container{
-    padding: 1.6rem;
-    border-radius: 10rem;
-    background-color: var(--color-primary-light);
-    display: flex;
-    color: var(--color-light);
+.list-img-image{
+    height: 45rem;
+}
 
+.list-img-item{
+    display: flex;
+    align-items: center;
+    padding:1rem;
+}
+
+.list-img-item > img{
+    padding-right: 1.5rem;
+}
+
+.tick-bulleting{
+    height: 3rem;
 }

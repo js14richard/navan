@@ -1,0 +1,19 @@
+/* Animations Setup */
+
+@keyframes line-spread{
+    0% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes horizontal-scroll{
+    0% {
+        transform: translateZ(0) translateX(0);
+    }
+    100%{
+        transform: translateZ(0) translateX(-50%);
+    }
+}
