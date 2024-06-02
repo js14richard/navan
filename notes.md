@@ -64,3 +64,22 @@
   </object>
   
   ```
+
+
+### 4. Import css styles from another css files
+
+``` css
+@import url(css/utilities.css);
+@import url(css/variables.css);
+
+```
+
+### 5. Convert a color image/svg to white or black
+
+  * brightness(0) --> will change the image to black
+  * invert(1) --> will convert the colors of image, (black to white and white to black).
+
+  ``` css
+  filter: brightness(0) invert(1);
+  ```
+

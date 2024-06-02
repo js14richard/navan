@@ -15,12 +15,23 @@
     --color-shade-grey:#e7e7e7;
 
 
+    
     --color-light:#ffff;
     --color-dark:#000000;
+
+    --color-grey-line:#d6d6d675;
+
+    --color-grey-text:#8d8da5;
+
+    --color-purple-light:#bd66ff;
+
+    --color-purple-dark:#7502ce;
 
     --color-gradient: linear-gradient(107deg,#8f00ff 11.97%,#a30fdf 35.02%,#b920bd 56.51%,#db3679 74.85%,#fb4b37 88.48%);
 
     --blue-banner-gradient: linear-gradient(95.12deg, #4747eb .48%, #a533ff 99.68%);
+
+    --blue-purple-gradient: linear-gradient(107deg,#8f00ff 11.97%,#a30fdf 35.02%,#b920bd 56.51%,#db3679 74.85%,#fb4b37 88.48%);
     /*
     
     font-primary --> Used for Headings 
@@ -38,7 +49,8 @@
     --font-size-f3:2.2rem; /* 22px */
     --font-size-f4:2rem; /* 20px */
     --font-size-f5:1.6rem; /* 16px */
-    --font-size-f6:1.2rem; /* 12px */ 
+    --font-size-f6:1.4rem; /* 14px */ 
+    --font-size-f7:1.2rem; /* 12px */
 
     
     --three-rem:3rem;
@@ -46,5 +58,9 @@
     --ten-rem:10rem;
     --thirteen-rem:13rem;
     --fifteen-rem:15rem;
+
+
+    --container-width:75%;
     
+    --footer-container-width:60%;
 }

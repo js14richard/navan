@@ -1,0 +1,24 @@
+@import url(/css/utilities.css);
+@import url(/css/variables.css);
+@import url(/css/animation.css);
+
+
+.chat-icon-container{
+    border-radius: 50%;
+    background-color: var(--color-primary-light);
+    display: flex;
+    width: max-content;
+    height: max-content;
+}
+
+.chat-icon-container:hover{
+    background-color: var(--color-purple-dark);
+    cursor: pointer;
+}
+
+.chat-icon-logo{
+    height:2rem;
+    width: 2rem;
+    color: var(--color-light);
+    animation: chat-pulse 2s ease-in-out 2s infinite ;
+}

@@ -58,7 +58,7 @@ header{
     display: flex;
     width: 100%;
     justify-content: center;
-    font-size: var(--font-size-f4);
+    font-size: var(--font-size-f5);
     height: max-content;
     font-family: var(--font-secondary);
     color:var(--color-primary-deep-dark);
@@ -85,11 +85,11 @@ header{
     background-color: var(--color-light);
     height: max-content;
     position: fixed;
-    top:var(--five-rem);
+    top:4rem;
 }
 
 .main-nav-container{
-    width: 75%;
+    width: var(--container-width);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -335,7 +335,7 @@ header{
 }
 
 .blue-banner-container{
-    width: 75%;
+    width: var(--container-width);
     padding:var(--ten-rem) var(--fifteen-rem);
     background-image: var(--blue-banner-gradient);
     margin: 0 auto;
@@ -360,7 +360,7 @@ header{
 .list-img-container{
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: var(--container-width);
     margin: 0 auto;
     font-size: var(--font-size-f4);
 }
@@ -385,4 +385,143 @@ header{
 
 .tick-bulleting{
     height: 3rem;
+}
+
+
+/*** See navan action ***/
+
+.see-navan-action-section{
+    background-image: var(--blue-purple-gradient);
+}
+
+.see-navan-action-container{
+    width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navan-action-img{
+    height: 35rem;
+}
+
+
+/*** Footer Styling ***/
+
+.home-footer{
+    height: max-content;
+}
+
+.footer-container{
+    width: var(--footer-container-width);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.footer-top-navigation{
+    display: flex;
+    gap:10rem;
+    height: 100%;
+}
+
+
+.navan-logo-footer{
+    height: 2rem;
+    width: auto;
+    filter: invert(1);
+}
+
+.footer-region{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-list-item{
+    list-style-type: none;
+    padding-top:1.5rem;
+}
+
+.footer-list-item:hover{
+    text-decoration: underline;
+}
+
+.footer-social-icons{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.footer-logo-icons{
+    display: flex;
+    align-items: center;
+    gap:3rem;
+}
+
+.footer-social-items{
+    display: flex;
+    gap:3rem;
+}
+
+.footer-social-item{
+    list-style-type: none;    
+}
+
+.footer-appstorel-logo{
+    height: 3rem;
+}
+
+
+/*** Legal terms styling ***/
+
+.legal-terms-navigation{
+    padding: 3rem 0;
+    border-bottom: .1px solid var(--color-grey-line);
+    border-top: .1px solid var(--color-grey-line);
+}
+
+.legal-term-items{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.legal-term-item{
+    list-style-type: none;
+}
+
+.legal-term-button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.legal-term-svg{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.footer-disclaimer{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-f6);
+}
+
+
+/*** Chat widget placement ***/
+
+.chat-frame-container{
+    position: fixed;
+    right: 3    rem;
+    bottom: 3rem;
+}
+
+.chat-widget-iframe{
+    width: 5rem;
+    height: 5rem;
+    z-index: 10000000;
 }

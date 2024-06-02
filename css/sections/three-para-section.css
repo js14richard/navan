@@ -10,7 +10,7 @@
 .three-para-section-container{
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: var(--container-width);
     align-items: center;
     text-align: center;
     gap: 5rem;

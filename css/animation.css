@@ -17,3 +17,35 @@
         transform: translateZ(0) translateX(-50%);
     }
 }
+
+@keyframes chat-shake {
+    0% {
+        transform: translateZ(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateZ(0) rotate(0);
+    }
+
+    75% {
+        transform: translateZ(0) rotate(5deg);
+    }
+
+    100% {
+        transform: translateZ(0) rotate(0);
+    }
+}
+
+@keyframes chat-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

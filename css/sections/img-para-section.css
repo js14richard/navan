@@ -7,7 +7,7 @@
 }
 
 .img-para-container{
-    width: 75%;
+    width: var(--container-width);
     display: flex;
     gap:7rem;
     justify-content: space-between;
