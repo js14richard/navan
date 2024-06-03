@@ -19,3 +19,56 @@
     color: var(--color-light);
     animation: chat-pulse 2s ease-in-out 2s infinite ;
 }
+
+
+/*** Chat widget Label Styling ***/
+
+.chat-label-container{
+    padding: 1.5rem 2rem;
+    background-color: var(--color-light);
+    position: relative;
+    cursor: pointer;  
+    overflow-x: hidden;    
+}
+
+.chat-label-content{
+    padding-top:2.5px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.chat-label-text{
+    font-size: 1.8rem;
+}
+
+.navan-chat-logo{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 25%;
+}
+
+.chat-label-close{
+    position: absolute;
+    right: .7rem;
+    top: .5rem;
+}
+
+.chat-close-icon-button{
+    border: none;
+    background-color: none;
+    border-radius: 50%;
+    display: flex;
+    padding: 1px;
+}
+
+.chat-close-icon-button:hover{
+    cursor: pointer;
+}
+
+.chat-close-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    
+}
