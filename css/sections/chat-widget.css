@@ -24,7 +24,7 @@
 /*** Chat widget Label Styling ***/
 
 .chat-label-container{
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0;
     background-color: var(--color-light);
     position: relative;
     cursor: pointer;  
@@ -33,15 +33,13 @@
 
 .chat-label-content{
     padding-top:2.5px;
+    padding-left: 8px;
     display: flex;
     gap: 1rem;
     align-items: center;
 
 }
 
-.chat-label-text{
-    font-size: 1.8rem;
-}
 
 .navan-chat-logo{
     height: 4rem;
