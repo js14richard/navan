@@ -1,12 +1,13 @@
-@import url(css/utilities.css);
-@import url(css/variables.css);
-@import url(css/animation.css);
+@import url(/css/utilities.css);
+@import url(/css/variables.css);
+@import url(/css/animation.css);
 
 
 .chat-icon-container{
     border-radius: 50%;
     background-color: var(--color-primary-light);
     display: flex;
+    padding: .8rem;
     width: max-content;
     height: max-content;
 }

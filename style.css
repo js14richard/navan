@@ -516,11 +516,8 @@ header{
 
 .chat-frame-container{
     position: fixed;
-    right: 3rem;
-    bottom: 3rem;
-}
-
-.chat-widget-iframe{
+    right: 5rem;
+    bottom: 5rem;
     width: 5rem;
     height: 5rem;
     z-index: 10000000;
