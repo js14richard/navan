@@ -4,6 +4,7 @@
 @import url(css/sections/three-para-section.css);
 @import url(css/animation.css);
 @import url(css/components.css);
+@import url(css/sections/chat-widget.css);
 
 *{
     margin: 0;
