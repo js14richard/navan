@@ -59,8 +59,11 @@
     --thirteen-rem:13rem;
     --fifteen-rem:15rem;
 
+    --container-max-width: 1400px !important;
 
     --container-width:75%;
     
     --footer-container-width:60%;
+
+    --footer-container-max-width:1200px !important;
 }

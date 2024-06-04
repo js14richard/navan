@@ -4,8 +4,6 @@
     background-color: var(--color-primary-light);
     display: flex;
     padding: 1.5rem;
-    width: max-content;
-    height: max-content;
 }
 
 .chat-icon-container:hover{
@@ -32,8 +30,8 @@
 }
 
 .chat-label-content{
-    padding-top:2.5px;
-    padding-left: 8px;
+    padding-top:.25rem;
+    padding-left: 1rem;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -58,7 +56,7 @@
     background-color: none;
     border-radius: 50%;
     display: flex;
-    padding: 1px;
+    padding: .1rem;
 }
 
 .chat-close-icon-button:hover{
@@ -69,4 +67,42 @@
     height: 2.5rem;
     width: 2.5rem;
     
+}
+
+
+/*** Chat widget placement ***/
+
+.chat-frame-container{
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000000;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.chat-widget-iframe{
+    width: 6rem;
+    height: 6.5rem;
+    /* transform: translateX(200%);
+    opacity: 0;    
+    animation: slide-from-right .5s ease-in-out 2s forwards; */
+}
+
+.chat-widget-label-iframe{
+    height: 7.5rem;
+    width: 32rem;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.1);
+    background-color: var(--color-light);
+    border-radius: 1.3rem;
+    border: .5px solid var(--color-light);
+    /* transform: translateY(-100%); 
+    opacity: 0;
+    animation: slide-from-top .5s ease-in-out 3s forwards;     */
+}
+
+iframe{
+    overflow-x: hidden !important;
 }

@@ -3,13 +3,13 @@
 .img-para-section{
     display: flex;
     justify-content: center;
-    padding: 6rem 0;
+    padding: 5rem 0;
 }
 
 .img-para-container{
     width: var(--container-width);
     display: flex;
-    gap:7rem;
+    gap:5rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -19,7 +19,7 @@
 }
 
 .img-para-section-text{
-    width: 50%;
+    width: 45%;
 }
 
 .img-para-section-img{
@@ -35,3 +35,5 @@
     margin-left: 5rem;
     padding-top:5rem;
 }
+
+
