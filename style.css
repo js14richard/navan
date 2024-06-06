@@ -156,7 +156,7 @@ header{
 .hero-section{
     background-image: var(--color-gradient);
     height: max-content;
-    padding: 7rem;
+    padding: 7rem 0;
     position: relative;
     top: 11.6rem;
     color: var(--color-light);
@@ -167,8 +167,9 @@ header{
     position: absolute;
     height: calc(5*var(--ten-rem));
     bottom: -8rem;
-    left: -75%;
+    left: -70%;
     z-index: 1;
+
 }
 
 
@@ -500,34 +501,37 @@ header{
 
 /*** Responsive Styling ***/
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1660px) {
     :root {
-        font-size: 55%;
-        --container-width : 85%;
+        font-size: 58%; 
+        --container-width : 88%;
+        --footer-container-width : 70%;
     }
-}
 
-
-@media screen and (max-width: 1250px) {
-    :root {
-        font-size: 50%;
-        --container-width : 95%;
-        --footer-container-width:85%;
-    }
-    
     .wave-bg-xl{
-        bottom: -5rem;
-        left:-50%;
+        height: calc(4.5*var(--ten-rem));
+        left: -55%;
+    }
+
+    .blue-banner-container{
+        padding: var(--ten-rem) var(--thirteen-rem);
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1440px) {
     :root {
-        font-size: 55%;
+        font-size: 55%; 
+        --container-width : 90%;
+        --footer-container-width : 90%;
     }
 
-    .img-para-container{
-        width: 100%;
+    .wave-bg-xl{
+        height: calc(4*var(--ten-rem));
+    }
+
+    .blue-banner-container{
+        padding: var(--ten-rem) var(--ten-rem);
     }
 
 }
+
