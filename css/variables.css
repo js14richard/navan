@@ -32,6 +32,12 @@
     --blue-banner-gradient: linear-gradient(95.12deg, #4747eb .48%, #a533ff 99.68%);
 
     --blue-purple-gradient: linear-gradient(107deg,#8f00ff 11.97%,#a30fdf 35.02%,#b920bd 56.51%,#db3679 74.85%,#fb4b37 88.48%);
+    
+    --color-gradient-light-primary:linear-gradient(rgb(255, 255, 255) 0%, rgb(217, 242, 236) 100%);
+    --color-gradient-light-secondary:linear-gradient(rgb(255, 255, 255) 0%, rgb(254, 210, 205) 100%);
+    --color-gradient-light-purple:linear-gradient(rgb(255, 255, 255) 0%, rgb(233, 204, 255) 100%);
+    --color-gradient-dark-primary: linear-gradient(rgb(255, 255, 255) 0%, rgb(209, 209, 250) 100%);
+
     /*
     
     font-primary --> Used for Headings 

@@ -160,16 +160,24 @@ header{
     position: relative;
     top: 11.6rem;
     color: var(--color-light);
-    overflow: hidden;
+}
+
+
+.wave-bg{
+    position: absolute;
+    bottom: -8rem;
+    z-index: 1;
 }
 
 .wave-bg-xl{
-    position: absolute;
     height: calc(5*var(--ten-rem));
-    bottom: -8rem;
     left: -70%;
-    z-index: 1;
+}
 
+.wave-bg-lg{
+    display: none;
+    height: calc(5*var(--ten-rem));
+    left: -30%;
 }
 
 
@@ -183,7 +191,7 @@ header{
 /* Hero section cards */
 
 
-.hero-travel-cards{
+.hero-travel-cards-lg{
     z-index: 20;
     margin-top:3.5rem;
     position: relative;
@@ -249,6 +257,78 @@ header{
     color: var(--color-dark);
     font-size: var(--font-size-f6);
     line-height: 2rem;
+}
+
+.hero-travel-cards-sm{
+    width: 40rem;
+    margin: 0 auto;
+    height: max-content;
+    display: none;
+    position: relative;
+    z-index: 20;
+}
+
+.hero-travel-cards-sm > .travel-card{
+    border-radius: 3rem;
+}
+
+.hero-travel-card-top-sm{
+    background-image: url('images/travel-card-tablet-2.png');
+    height: 15rem;
+    background-size: cover;
+    position: relative; 
+}
+
+.hero-travel-card-top-sm > .travel-card-content{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: absolute;
+    gap: .5rem;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    text-align: center;
+    width: 35%;
+}
+
+.hero-travel-card-bottom-sm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-travel-card-sm{
+    width: 48%;
+    margin-top:2rem;
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8%;
+}
+
+.sm-card-1{
+    background-image: var(--color-gradient-light-primary);
+}
+.sm-card-2{
+    background-image: var(--color-gradient-light-secondary);
+}
+.sm-card-3{
+    background-image: var(--color-gradient-light-purple);
+}
+.sm-card-4{
+    background-image: var(--color-gradient-dark-primary);
+}
+
+.hero-travel-card-sm > .travel-card-content{
+    width: 60%;
+    line-height: 2.5rem;
+    text-align: center;
+    gap: 1rem;
+    font-size: var(--font-size-f4);
 }
 
 .travel-checkbox{
@@ -503,7 +583,7 @@ header{
 
 @media screen and (max-width: 1660px) {
     :root {
-        font-size: 58%; 
+        font-size: 60%; 
         --container-width : 88%;
         --footer-container-width : 70%;
     }
@@ -520,8 +600,8 @@ header{
 
 @media screen and (max-width: 1440px) {
     :root {
-        font-size: 55%; 
-        --container-width : 90%;
+        font-size: 58%; 
+        --container-width : 95%;
         --footer-container-width : 90%;
     }
 
@@ -535,3 +615,28 @@ header{
 
 }
 
+
+@media screen and (max-width: 1220px){
+    :root {
+        font-size: 55%; 
+        --container-width : 85%;
+        --footer-container-width : 85%;
+    }
+
+    .hero-travel-cards-lg{
+        display: none;
+    }
+
+    .hero-travel-cards-sm{
+        display: block;
+    }
+
+    .wave-bg-xl{
+        display: none;
+    }
+
+    .wave-bg-lg{
+        display: block;
+    }
+
+}
