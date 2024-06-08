@@ -2,18 +2,16 @@
 
 .three-para-section{
     padding: 5rem 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
+    margin: 2.5rem auto;
 }
 
 .three-para-section-container{
     display: flex;
-    justify-content: space-between;
     width: var(--container-width);
-    align-items: center;
     text-align: center;
     gap: 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .three-para-section-item{
@@ -22,7 +20,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: calc(33.33% - 5rem);
 }
+
 
 .three-para-svg-container{
     padding: 1.6rem;

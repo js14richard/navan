@@ -9,6 +9,15 @@
     }
 }
 
+@keyframes gradient-change{
+    0% {
+        background-image: linear-gradient(to right, rgb(190, 235, 246), rgb(179, 206, 250));
+    }
+    100% {
+        background-image: linear-gradient(to right, rgb(179, 206, 250), rgb(190, 235, 246));
+    }
+}
+
 @keyframes horizontal-scroll{
     0% {
         transform: translateZ(0) translateX(0);
