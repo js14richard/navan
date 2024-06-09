@@ -840,6 +840,10 @@ header{
         justify-content: space-between;
     }
 
+    .chat-widget-label-iframe{
+        padding-top: 0;
+    }
+
 }
 
 
@@ -900,7 +904,7 @@ header{
     }
 
     .footer-container-sm{
-        width: 90%;
+        width: 80%;
     }
 }
 
