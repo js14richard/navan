@@ -92,9 +92,9 @@
 .chat-widget-iframe{
     width: 7.5rem;
     height: 7.5rem;
-    /* transform: translateX(200%);
+    transform: translateX(200%);
     opacity: 0;    
-    animation: slide-from-right .5s ease-in-out 2s forwards; */
+    animation: slide-from-right .5s ease-in-out 2s forwards;
 }
 
 .chat-widget-label-iframe{
@@ -105,9 +105,9 @@
     background-color: var(--color-light);
     border-radius: 1.3rem;
     border: .5px solid var(--color-light);
-    /* transform: translateY(-100%); 
+    transform: translateY(-100%); 
     opacity: 0;
-    animation: slide-from-top .5s ease-in-out 3s forwards;     */
+    animation: slide-from-top .5s ease-in-out 3s forwards;
 }
 
 iframe{
