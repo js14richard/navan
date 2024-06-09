@@ -839,6 +839,7 @@ header{
         display: flex;
         justify-content: space-between;
     }
+
 }
 
 
@@ -879,7 +880,7 @@ header{
     }
 
     .integrated-business-text{
-        margin: 4.5rem;
+        margin: 2.5rem 0;
     }
 
     .btn-block-xl{
@@ -901,5 +902,44 @@ header{
     .footer-container-sm{
         width: 90%;
     }
+}
 
+@media screen and (max-width: 576px){
+    :root{
+        font-size: 47%;
+        --container-width:70%;
+    }
+
+    .footer-container-sm{
+        width: 70%;
+    }
+
+    .list-img-container{
+        padding-top: 5rem;
+        justify-content: center;
+    }
+
+    .wave-bg-sm{
+        height: calc(2.5 * var(--ten-rem));
+    }
+
+    .btn-block-xl{
+        padding: 1rem 15rem;
+    }
+
+    .blue-banner-container{
+        width: 100%;
+        padding: var(--ten-rem) var(--three-rem);
+    }
+}
+
+@media screen and (max-width: 384px){
+    :root{
+        font-size: 45%;
+        --container-width:90%;
+    }
+
+    .img-para-img-sm{   
+        height: 30rem;
+    }
 }
