@@ -57,7 +57,7 @@
     top: .5rem;
 }
 
-.chat-close-icon-button{
+#chat-close-icon-button{
     border: none;
     background-color: none;
     border-radius: 50%;
@@ -65,7 +65,7 @@
     padding: .1rem;
 }
 
-.chat-close-icon-button:hover{
+#chat-close-icon-button:hover{
     cursor: pointer;
 }
 
