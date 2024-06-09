@@ -1,8 +1,7 @@
 /*** img-para-section styling***/
 
 .img-para-section{
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
     padding: 5rem 0;
 }
 
